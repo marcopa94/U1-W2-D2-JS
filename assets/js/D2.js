@@ -37,10 +37,10 @@ if (numerod1 % numerod2) {
 
 const numerod3 = 5;
 const numerod4 = 25;
-if (numerod3 === 8 || numerod4 === 8) {
+if (numerod3 === 8 || numerod4 === 8 || numerod3 - numerod4 === 8 || numerod3 + numerod4 === 8) {
   console.log("un numero è uguale a 8");
 } else {
-  console.log("nun numero è diverso da 8");
+  console.log(" numero è diverso da 8");
 }
 
 /* ESERCIZIO 5
