@@ -5,9 +5,9 @@ const num0 = 30;
 const num2 = 6;
 
 if (num0 > num2) {
-  console.log("30 è il numero piu grande");
+  console.log("Il numero piu grande è", num0);
 } else {
-  console.log("6 è il numero piu grande");
+  console.log("è il numero piu grande", num2);
 }
 
 /* ESERCIZIO 2
@@ -16,9 +16,7 @@ if (num0 > num2) {
 const num5 = 5;
 const num4 = 6;
 
-if (num5 === num4) {
-  console.log("is equal a 5");
-} else {
+if (num5 !== num4) {
   console.log("is not equal a 5");
 }
 
