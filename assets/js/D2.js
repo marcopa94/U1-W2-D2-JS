@@ -49,13 +49,11 @@ if (numerod3 === 8 || numerod4 === 8 || numerod3 - numerod4 === 8 || numerod3 + 
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 let totalShoppingCart;
-totalShoppingCart = 60;
+totalShoppingCart = 20;
 if (totalShoppingCart > 50) {
   console.log("l'utente ha diritto alla spedizione gratuita");
-  console.log(totalShoppingCart + 10);
 } else {
   console.log("l'utente non ha diritto alla spedizione gratuita");
-  console.log(totalShoppingCart + 10);
 }
 
 /* ESERCIZIO 6
@@ -63,18 +61,17 @@ if (totalShoppingCart > 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-let totalShoppingCart1 = 60;
-let discountValue = (totalShoppingCart1 / 100) * 20;
-if (totalShoppingCart1 > 50) {
-  console.log("l'utente ha diritto alla spedizione gratuita");
-  console.log(discountValue + 10);
-  console.log("today is a blackFriday for you a special sscount of 20% ------>price final ".discountValue);
+let discountValue = (totalShoppingCart / 100) * 20;
+let finalprice = totalShoppingCart - discountValue;
+if (totalShoppingCart > 50) {
+  console.log("Today is a blackfriday for you 20% discount the final price is-->" + finalprice);
 } else {
-  console.log("l'utente non ha diritto alla spedizione gratuita");
-  console.log(discountValue + 10);
-  console.log("today is a blackFriday for you a special sscount of 20%------->final price".discountValue);
+  finalprice = finalprice + 10;
+  console.log(
+    "Today is a blackFriday for you a special discount of 20% spese spedizione incluse------->discounted final price is " +
+      finalprice
+  );
 }
-
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
